@@ -1,0 +1,11 @@
+###
+GET http://localhost:4004/employee/Planets
+
+###
+POST http://localhost:4004/employee/Planets
+Content-Type: application/json
+
+{
+    "planet_name" : "Earth",
+    "star_system" : "Sun"
+}

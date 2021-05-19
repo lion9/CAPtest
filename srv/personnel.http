@@ -1,0 +1,39 @@
+###
+GET http://localhost:4004/employee/Employees?$top=11
+
+###
+POST http://localhost:4004/employee/Employees
+Content-Type: application/json
+
+{
+    "first_name" : "Artyom",
+    "last_name" : "Vecherov",
+    "position" : "pilot",
+    "eligible": true,
+    "planet": 
+    {
+        "planet_name" : "Earth",
+        "star_system" : "Sun"
+    }
+}
+
+###
+POST http://localhost:4004/employee/Employees
+Content-Type: application/json
+
+{
+    "first_name" : "Darth",
+    "last_name" : "Vader",
+    "position" : "pilot",
+    "eligible": true
+}
+###
+PATCH http://localhost:4004/employee/Employees/82cb2011-fa00-4967-a240-2d526b81dc72
+Content-Type: application/json
+
+{
+    "first_name" : "Sergey"
+}
+
+###
+DELETE http://localhost:4004/employee/Employees/8d96576f-0abe-4b60-8bb6-cb30ad857a1d
